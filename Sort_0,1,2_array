@@ -1,0 +1,12 @@
+# Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
+n = int(input("Enter the number of elements in the array: "))
+list = list(map(int, input("Enter the elements of the array: ").strip().split()))
+# sorting the array
+list.sort()
+# printing the sorted array
+print("The sorted array is: ", list)
+
+# Test cases
+# Enter the number of elements in the array: 10
+# Enter the elements of the array: 0 1 2 2 1 1 1 0 2 1
+# The sorted array is:  [0, 0, 1, 1, 1, 1, 1, 2, 2, 2]
