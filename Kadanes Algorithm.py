@@ -1,4 +1,4 @@
-# Given an integer array arr[]. Find the contiguous sub-array(containing at least one number) that has the maximum sum and return its sum.
+# Given an integer array arr[]. Find the contiguous sub-array(containing at least one number) that has the maximum sum and return it's sum.
 arr = list(map(int,input("Enter the array ").strip().split()))
 print(arr)
 minimum = min(arr)
