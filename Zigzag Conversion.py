@@ -16,5 +16,5 @@ class Solution:
             # Move up or down based on the direction
             current_row += 1 if going_down else -1
         
-        # Concatenate all rows to get the final result
+        # Concatenate all rows to get final result
         return ''.join(rows)
