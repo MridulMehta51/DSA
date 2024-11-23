@@ -15,7 +15,6 @@ class Solution:
             5: 'V',
             4: 'IV',
             1: 'I'
-       
         }
 
         roman = ''
