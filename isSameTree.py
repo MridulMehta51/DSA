@@ -34,3 +34,31 @@ class Solution:
         
         # Compare both trees
         return level_order_traversal(p) == level_order_traversal(q)
+
+
+
+
+OROROOROOROROOR
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        parray=[]
+        qarray=[]
+
+        def arr(self,array):
+            if self:
+                array.append(self.val)
+                arr(self.left,array)
+                arr(self.right,array)
+            else:
+                array.append(None)
+    
+        arr(p,parray)
+        arr(q,qarray)
+        
+        return parray==qarray
