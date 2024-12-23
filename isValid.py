@@ -2,7 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         stack=[]
 
-        bckt={")":"(","}":"{","]":"["}
+        bckt={")":"(","}":"{","]":"[" }
 
         for i in s:
             if i in bckt:
