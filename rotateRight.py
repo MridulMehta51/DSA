@@ -8,20 +8,22 @@ class Solution:
         if not head or not head.next or k==0:
             return head
         curr=head
-        m=1
+        count=1
         while curr.next:
             curr=curr.next
-            m+=1
+            count+=1
         curr.next = head
-        p=k%m
-        breakpoint=m-p
         
-        new=head
-        for _ in range(breakpoint-1):
-            new=new.next
-        newhead=new.next
+        p=k%count
+        
+        breakcycle=count-p
+        
+        newstart=head
+        for _ in range(breakcycle-1):
+            newstart=newstart.next
+        newhead=newstart.next
 
-        new.next=None
+        newstart.next=None
         
         return newhead
             
