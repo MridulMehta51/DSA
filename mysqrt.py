@@ -1,22 +1,25 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
-        if x ==0:
-            return 0
+    
         left,right=1,x
-        while left<=right:
-            mid = (left+right)//2
-            if mid*mid==x:
-                return mid
-            elif mid *mid <x:
-                left=mid+1
-            else:
-                right=mid-1
-        return right
         
-
-import math
-class Solution:
-    def mySqrt(self, x: int) -> int:
-        return int(math.sqrt(x))
+        
+        while left<=right:
+            
+            m=(left+right)//2
+            
+            square=m*m
+            
+            if x==square:
+                return m
+            
+            elif square<x:
+                left=m+1
+                
+            else:
+                right=m-1
+                
+        return right
+                
         
         
